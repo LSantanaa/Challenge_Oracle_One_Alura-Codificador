@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./public/svg/logoAlura.svg"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./public/css/style.css" />
+
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <header class="content">
+      <div class="logo">
+        <img src="./public/svg/logoAlura.svg" alt="logoAlura" />
+      </div>
+    </header>
+
+    <div class="wrap">
+      <main class="content">
+        <div class="textArea">
+          <textarea
+            name="text"
+            id="text"
+            cols="45"
+            rows="10"
+            placeholder="Digite seu texto..."
+          ></textarea>
+          <div class="alert">
+            <img src="./public/svg/warning-circle.svg" width="20px" alt="" />
+            <span>Números não são codificados.</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="btn">Criptografar</button>
+          <button class="btn btnDescript">Descriptografar</button>
+        </div>
+      </main>
+      <section class="content">
+        <div class="textResult">
+          <img
+            class="desktopImage"
+            src="./public/svg/textNotFound.svg"
+            alt=""
+          />
+          <h3>Nenhuma mensagem encontrada</h3>
+          <p>Digite um testo que você deseja criptografar ou descriptografar</p>
+        </div>
+        <div class="copy">
+          <button class="btn">Copiar</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="./public/js/app.js" type="module"></script>
+  </body>
+</html>

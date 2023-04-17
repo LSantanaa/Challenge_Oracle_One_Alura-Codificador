@@ -1,0 +1,50 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  padding: 1rem;
+  width: 100%;
+}
+.textArea{
+  display: flex;
+  flex-direction: column;
+  
+  textarea{
+    border: none;
+    padding: 0.5rem;
+    resize: none;
+    background-color:$bgDefault;
+  }
+}
+.alert{
+  margin-top: .5rem;
+  display: flex;
+  align-items: center;
+}
+
+.desktopImage, .copy{
+  display: none;
+}
+
+.textResult{
+  background-color: $white;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+ 
+}
+
+
+@media screen and (min-width: 992px){
+  .content{
+    padding: 2rem;
+  }
+  .wrap{
+    flex-direction: row;
+  }
+  .desktopImage{
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,71 @@
+h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: .5rem;
+}
+p{
+  font-weight: 500;
+}
+
+textarea{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $alura-blue-light;
+  &::placeholder{
+    font-size: 1.5rem;
+    color: $alura-blue-light;
+  }
+  &:focus-visible{
+    outline: none;
+  }
+}
+.buttons{
+  margin-top: 1rem;
+}
+.btn{
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 1px solid $alura-blue;
+  background-color: $alura-blue;
+  color: $white;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: sans-serif;
+  transition: .4s ease;
+  &:hover{
+    background-color: $alura-blue-dark;
+    color: $white-dark;
+    transform: scale(1.02);
+  }
+}
+.btnDescript{
+  margin-bottom: 0;
+  background-color: $white-light;
+  color: $alura-blue-light;
+  &:hover{
+    background-color: $white-dark;
+  color: $alura-blue-dark;
+  }
+}
+@media screen and (min-width: 768px){
+  .buttons{
+    display: flex;
+    align-items: center;
+  }
+  .btn{
+    margin: 0 10px;
+  }
+}
+@media screen and (min-width: 992px){
+  .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn{
+    margin: 0 10px;
+  }
+}
