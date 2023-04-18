@@ -50,6 +50,13 @@ textarea{
     color: $alura-blue-light;
   }
 }
+
+.result{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: $alura-blue-light;
+}
+
 @media screen and (min-width: 768px){
   .buttons{
     display: flex;

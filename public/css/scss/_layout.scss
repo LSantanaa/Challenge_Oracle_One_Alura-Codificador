@@ -36,10 +36,13 @@
 
 .textResult{
   background-color: $white;
+  word-wrap: break-word;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
 }
+
+
 .togle-theme {
   width: 200px;
   height: 30px;

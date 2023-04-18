@@ -98,6 +98,12 @@ textarea:focus-visible {
   color: rgba(18, 83, 163, 0.8901960784);
 }
 
+.result {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(18, 83, 163, 0.8901960784);
+}
+
 @media screen and (min-width: 768px) {
   .buttons {
     display: flex;
@@ -159,6 +165,7 @@ textarea:focus-visible {
 
 .textResult {
   background-color: #ffffff;
+  word-wrap: break-word;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
