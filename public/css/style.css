@@ -24,6 +24,10 @@
 .dark-theme .logo img {
   filter: drop-shadow(3px 2px 4px rgb(233, 227, 227));
 }
+.dark-theme footer {
+  background-color: rgba(18, 83, 163, 0.8901960784);
+  color: #f8f9fa;
+}
 
 * {
   padding: 0;
@@ -301,7 +305,6 @@ footer {
   width: 100%;
   flex-shrink: 0;
   padding: 12px;
-  background-color: #e5e5e5;
 }
 
 @media screen and (min-width: 992px) {

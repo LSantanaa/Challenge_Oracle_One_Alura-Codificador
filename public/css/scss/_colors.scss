@@ -37,6 +37,9 @@ $text-color-dark: #f8f9fa;
   .logo img{
     filter: drop-shadow(3px 2px 4px rgb(233, 227, 227));
   }
-
+  footer{
+    background-color: $alura-blue-light;
+    color: $text-color-dark;
+  }
 }
 
