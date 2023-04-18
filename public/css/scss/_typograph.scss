@@ -1,28 +1,31 @@
-h3{
+h3 {
   font-size: 1.5rem;
   font-weight: 800;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-p{
+p {
   font-weight: 500;
 }
 
-textarea{
+textarea {
   font-size: 1.5rem;
   font-weight: 500;
   color: $alura-blue-light;
-  &::placeholder{
+  &::placeholder {
     font-size: 1.5rem;
     color: $alura-blue-light;
   }
-  &:focus-visible{
+  &:focus-visible {
     outline: none;
   }
 }
-.buttons{
+.text-center {
+  text-align: center;
+}
+.buttons {
   margin-top: 1rem;
 }
-.btn{
+.btn {
   width: 100%;
   padding: 1rem;
   margin-bottom: 1.5rem;
@@ -34,45 +37,103 @@ textarea{
   font-size: 1rem;
   font-weight: 500;
   font-family: sans-serif;
-  transition: .4s ease;
-  &:hover{
+  transition: 0.4s ease;
+  &:hover {
     background-color: $alura-blue-light;
     color: $white-light;
     transform: scale(1.02);
   }
 }
-.btnDescript{
+.btnWhite {
   margin-bottom: 0;
   background-color: $white-light;
   color: $alura-blue-dark;
-  &:hover{
+  &:hover {
     background-color: $white;
     color: $alura-blue-light;
   }
 }
+.copy .btn{
+  width: 60%;
+  margin: 10px auto ;
+}
+[aria-label]::after {
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  z-index: 2;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #2a2a2a;
+}
+[aria-label]:hover::after {
+  display: block;
+}
 
-.result{
+.result {
   font-size: 1.5rem;
   font-weight: 500;
   color: $alura-blue-light;
 }
 
-@media screen and (min-width: 768px){
-  .buttons{
+.links {
+  margin-top: 10px;
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      margin-right: 4px;
+    }
+  }
+}
+
+a{
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 48px;
+  position: relative;
+  color: $alura-blue-dark;
+  
+  &::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+    width: 0%;
+    border-radius: 5px;
+    background-color: $alura-blue;
+    transition: all 0.3s ease;
+  }
+  &:hover{
+    color: $white-dark;
+    &::before{
+      width: 100%;
+      transform-origin: center;
+    }  
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
     display: flex;
     align-items: center;
   }
-  .btn{
+  .btn {
     margin: 0 10px;
   }
 }
-@media screen and (min-width: 992px){
-  .buttons{
+@media screen and (min-width: 992px) {
+  .buttons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .btn{
+  .btn {
     margin: 0 10px;
   }
 }

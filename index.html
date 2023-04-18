@@ -22,60 +22,98 @@
     <title>Decodificador</title>
   </head>
   <body>
-    <header class="content">
-      <div class="headerContent">
-        <div class="logo">
-          <img src="./public/svg/logoAlura.svg" alt="logoAlura" />
-        </div>
-        <div class="relative togle-theme">
-          <button class="btn_togle_theme" id="theme-toggle">
-            <input type="checkbox" class="checkbox" id="checkbox"   />
-            <label for="checkbox" class="label">
-              <img src="./public/svg/round-light-mode.svg" class="sun" alt="sun light theme" />
-              <img src="./public/svg/round-dark-mode.svg" class="moon" alt="moon dark theme" />
-              <div class="ball"></div>
-            </label>
-          </button>
+    
+    <div class="wrapper">
+      <div class="container">
+        <header class="content">
+          <div class="headerContent">
+            <div class="logo">
+              <img src="./public/svg/logoAlura.svg" alt="logoAlura" />
+            </div>
+            <div class="relative togle-theme">
+              <button class="btn_togle_theme" id="theme-toggle">
+                <input type="checkbox" class="checkbox" id="checkbox" />
+                <label for="checkbox" class="label">
+                  <img
+                    src="./public/svg/round-light-mode.svg"
+                    class="sun"
+                    alt="sun light theme"
+                  />
+                  <img
+                    src="./public/svg/round-dark-mode.svg"
+                    class="moon"
+                    alt="moon dark theme"
+                  />
+                  <div class="ball"></div>
+                </label>
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="wrap">
+          <main class="content">
+            <div class="textArea">
+              <textarea
+                name="text"
+                id="text"
+                cols="45"
+                rows="10"
+                placeholder="Digite seu texto..."
+              ></textarea>
+              <div class="alert">
+                <img src="./public/svg/warning-circle.svg" width="20px" alt="" />
+                <span>Números não são codificados.</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <button class="btn" id="encrypt">Criptografar</button>
+              <button class="btn btnWhite" id="decrypt">Descriptografar</button>
+            </div>
+          </main>
+          <section class="content">
+            <div class="textResult">
+              <div id="textResult">
+                <img
+                  class="desktopImage"
+                  src="./public/svg/textNotFound.svg"
+                  alt=""
+                />
+                <h3>Nenhuma mensagem encontrada</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+              </div>
+              <div class="copy">
+                <button class="btn btnWhite" id="btnCopy" aria-label="Copiar para área de seleção">Copiar</button>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-    </header>
-
-    <div class="wrap">
-      <main class="content">
-        <div class="textArea">
-          <textarea
-            name="text"
-            id="text"
-            cols="45"
-            rows="10"
-            placeholder="Digite seu texto..."
-          ></textarea>
-          <div class="alert">
-            <img src="./public/svg/warning-circle.svg" width="20px" alt="" />
-            <span>Números não são codificados.</span>
-          </div>
+      
+      <footer class="text-center">
+        <div>
+          <p>Desenvolvido por LsDev &copy;2023 Alguns Direitos Reservados</p>
+          <p>Layout desenvolvido por ONE+Alura</p>
         </div>
-        <div class="buttons">
-          <button class="btn" id="encrypt">Criptografar</button>
-          <button class="btn btnDescript" id="decrypt">Descriptografar</button>
+        <div class="links" id="contato">
+          <a href="https://github.com/lsantanaa" target="_blank">
+            <img
+              src="./public/svg/github-logo.svg"
+              width="20px"
+              alt="logo-github"
+            />Github
+          </a>
+          <a href="https://linkedin.com/in/lsantanaa" target="_blank">
+            <img
+              src="./public/svg/linkedin-logo.svg"
+              width="20px"
+              alt="logo-linkedin"
+            />LinkedIn
+          </a>
         </div>
-      </main>
-      <section class="content">
-        <div class="textResult" id="textResult">
-          <img
-            class="desktopImage"
-            src="./public/svg/textNotFound.svg"
-            alt=""
-          />
-          <h3>Nenhuma mensagem encontrada</h3>
-          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-        </div>
-        <div class="copy">
-          <button class="btn">Copiar</button>
-        </div>
-      </section>
-
+      </footer>
     </div>
+
+
     <script src="./public/js/app.js" type="module"></script>
   </body>
 </html>

@@ -64,6 +64,10 @@ textarea:focus-visible {
   outline: none;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .buttons {
   margin-top: 1rem;
 }
@@ -88,20 +92,80 @@ textarea:focus-visible {
   transform: scale(1.02);
 }
 
-.btnDescript {
+.btnWhite {
   margin-bottom: 0;
   background-color: #ded6d6;
   color: #042043;
 }
-.btnDescript:hover {
+.btnWhite:hover {
   background-color: #ffffff;
   color: rgba(18, 83, 163, 0.8901960784);
+}
+
+.copy .btn {
+  width: 60%;
+  margin: 10px auto;
+}
+
+[aria-label]::after {
+  content: attr(aria-label);
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  z-index: 2;
+  padding: 8px 10px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #2a2a2a;
+}
+
+[aria-label]:hover::after {
+  display: block;
 }
 
 .result {
   font-size: 1.5rem;
   font-weight: 500;
   color: rgba(18, 83, 163, 0.8901960784);
+}
+
+.links {
+  margin-top: 10px;
+}
+.links a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.links a img {
+  margin-right: 4px;
+}
+
+a {
+  display: inline-flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-left: 48px;
+  position: relative;
+  color: #042043;
+}
+a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  height: 5px;
+  width: 0%;
+  border-radius: 5px;
+  background-color: #0A3871;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #a7a4a4;
+}
+a:hover::before {
+  width: 100%;
+  transform-origin: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -123,6 +187,16 @@ textarea:focus-visible {
     margin: 0 10px;
   }
 }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  flex: 1;
+}
+
 .headerContent {
   display: flex;
   justify-content: space-between;
@@ -169,6 +243,12 @@ textarea:focus-visible {
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#textResult {
+  flex: 1;
 }
 
 .togle-theme {
@@ -217,6 +297,13 @@ textarea:focus-visible {
   transform: translateX(22px);
 }
 
+footer {
+  width: 100%;
+  flex-shrink: 0;
+  padding: 12px;
+  background-color: #e5e5e5;
+}
+
 @media screen and (min-width: 992px) {
   .content {
     padding: 2rem;
@@ -227,5 +314,8 @@ textarea:focus-visible {
   .desktopImage {
     display: block;
     margin: 0 auto;
+  }
+  .textResult {
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

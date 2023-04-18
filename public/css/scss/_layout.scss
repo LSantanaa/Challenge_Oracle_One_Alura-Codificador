@@ -1,3 +1,11 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.container{
+  flex: 1;
+}
 .headerContent{
   display: flex;
   justify-content: space-between;
@@ -40,9 +48,15 @@
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+#textResult{
+  flex: 1;
 }
 
 
+//botão toggle theme
 .togle-theme {
   width: 200px;
   height: 30px;
@@ -89,10 +103,16 @@
   transform: translateX(22px);
 }
 
+//footer
+footer{
+  width: 100%;
+  flex-shrink: 0;
+  padding: 12px;
+  background-color: $bg-light;
+}
 
 
-
-
+//desktop
 @media screen and (min-width: 992px){
   .content{
     padding: 2rem;
@@ -103,6 +123,10 @@
   .desktopImage{
     display: block;
     margin: 0 auto;
+  }
+  .textResult{
+
+    height: 100%;
   }
 }
 
