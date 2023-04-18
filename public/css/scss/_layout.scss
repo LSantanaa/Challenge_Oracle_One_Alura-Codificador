@@ -1,3 +1,11 @@
+.headerContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
 .wrap{
   display: flex;
   flex-direction: column;
@@ -14,7 +22,6 @@
     border: none;
     padding: 0.5rem;
     resize: none;
-    background-color:$bgDefault;
   }
 }
 .alert{
@@ -32,8 +39,55 @@
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
- 
 }
+.togle-theme {
+  width: 200px;
+  height: 30px;
+}
+
+.btn_togle_theme {
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  background-color: unset;
+  border: none;
+}
+
+.checkbox {
+  opacity: 0;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  background-color: $white-dark;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: $bg-light;
+  position: absolute;
+  top: 3px;
+  right: 26px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball {
+  transform: translateX(22px);
+}
+
+
+
 
 
 @media screen and (min-width: 992px){
@@ -48,3 +102,5 @@
     margin: 0 auto;
   }
 }
+
+

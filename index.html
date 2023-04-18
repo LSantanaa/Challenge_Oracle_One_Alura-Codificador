@@ -23,8 +23,20 @@
   </head>
   <body>
     <header class="content">
-      <div class="logo">
-        <img src="./public/svg/logoAlura.svg" alt="logoAlura" />
+      <div class="headerContent">
+        <div class="logo">
+          <img src="./public/svg/logoAlura.svg" alt="logoAlura" />
+        </div>
+        <div class="relative togle-theme">
+          <button class="btn_togle_theme" id="theme-toggle">
+            <input type="checkbox" class="checkbox" id="checkbox"   />
+            <label for="checkbox" class="label">
+              <img src="./public/svg/round-light-mode.svg" class="sun" alt="sun light theme" />
+              <img src="./public/svg/round-dark-mode.svg" class="moon" alt="moon dark theme" />
+              <div class="ball"></div>
+            </label>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -44,26 +56,26 @@
           </div>
         </div>
         <div class="buttons">
-          <button class="btn">Criptografar</button>
-          <button class="btn btnDescript">Descriptografar</button>
+          <button class="btn" id="encrypt">Criptografar</button>
+          <button class="btn btnDescript" id="decrypt">Descriptografar</button>
         </div>
       </main>
       <section class="content">
-        <div class="textResult">
+        <div class="textResult" id="textResult">
           <img
             class="desktopImage"
             src="./public/svg/textNotFound.svg"
             alt=""
           />
           <h3>Nenhuma mensagem encontrada</h3>
-          <p>Digite um testo que você deseja criptografar ou descriptografar</p>
+          <p>Digite um texto que você deseja criptografar ou descriptografar</p>
         </div>
         <div class="copy">
           <button class="btn">Copiar</button>
         </div>
       </section>
-    </div>
 
+    </div>
     <script src="./public/js/app.js" type="module"></script>
   </body>
 </html>

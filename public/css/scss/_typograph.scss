@@ -28,26 +28,26 @@ textarea{
   margin-bottom: 1.5rem;
   border-radius: 1rem;
   cursor: pointer;
-  border: 1px solid $alura-blue;
+  border: 1px solid $alura-blue-dark;
   background-color: $alura-blue;
   color: $white;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   font-family: sans-serif;
   transition: .4s ease;
   &:hover{
-    background-color: $alura-blue-dark;
-    color: $white-dark;
+    background-color: $alura-blue-light;
+    color: $white-light;
     transform: scale(1.02);
   }
 }
 .btnDescript{
   margin-bottom: 0;
   background-color: $white-light;
-  color: $alura-blue-light;
-  &:hover{
-    background-color: $white-dark;
   color: $alura-blue-dark;
+  &:hover{
+    background-color: $white;
+    color: $alura-blue-light;
   }
 }
 @media screen and (min-width: 768px){

@@ -1,5 +1,4 @@
 @import 'scss/colors';
-@import 'scss/typograph';
 
 *{
   padding: 0;
@@ -10,8 +9,7 @@
 body{
   width: 100%;
   height: 100vh;
-
-  background-color: $bgDefault;
 }
 
+@import 'scss/typograph';
 @import 'scss/layout';

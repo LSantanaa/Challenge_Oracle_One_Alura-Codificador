@@ -6,4 +6,37 @@ $white: #ffffff;
 $white-light: #ded6d6;
 $white-dark: #a7a4a4;
 
-$bgDefault: #e5e5e5;
+$bg-light: #e5e5e5;
+$bg-dark: #3b3a3a;
+$text-color-dark: #f8f9fa;
+
+.light-theme{
+  $primary-color: $bg-light;
+  background-color: $primary-color;
+  textarea {
+    background-color: $primary-color;
+  }
+}
+
+.dark-theme{
+  $primary-color: $bg-dark;
+  $text-color: $text-color-dark;
+
+  background-color: $primary-color;
+  textarea {
+    background-color: $primary-color;
+    color: $text-color-dark;
+    &::placeholder{
+      color: $text-color-dark;
+    }
+  }
+  .alert{
+    color: $text-color-dark;
+  }
+
+  .logo img{
+    filter: drop-shadow(3px 2px 4px rgb(233, 227, 227));
+  }
+
+}
+
